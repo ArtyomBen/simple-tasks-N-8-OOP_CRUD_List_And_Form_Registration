@@ -37,7 +37,7 @@ if ($chk) {
 $pid = $this->modelObj->insertRecord($user);
 if ($pid > 0) {
 $this->pageRedirect("index.php");
-$_SESSION['user'] = serialize($user -> username);
+$_SESSION['someuser'] = serialize($user -> username);
 } else {
 echo "Something is wrong..., try again.";
 }

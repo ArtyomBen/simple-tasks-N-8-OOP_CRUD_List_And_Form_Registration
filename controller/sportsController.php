@@ -133,7 +133,7 @@ if (isset($_GET['id'])) {
 $id = $_GET['id'];
 $res = $this->objsm->deleteRecord($id);
 if ($res) {
-$this->pageRedirect('view/');
+$this->pageRedirect('index.php');
 } else {
 echo "Something is wrong..., try again.";
 }
